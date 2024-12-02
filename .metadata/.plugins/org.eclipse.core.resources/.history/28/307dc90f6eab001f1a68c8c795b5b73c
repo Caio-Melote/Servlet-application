@@ -1,0 +1,41 @@
+package br.com.treinamento.gerenciador.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import br.com.treinamento.gerenciador.acao.ListaEmpresas;
+import br.com.treinamento.gerenciador.acao.MostraEmpresa;
+import br.com.treinamento.gerenciador.acao.RemoveEmpresa;
+
+//@WebServlet("/entrada")
+public class EntradaServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String paramAcao = request.getParameter("acao"); 
+
+        if(paramAcao.equals("ListaEmpresas")) {
+            
+        	ListaEmpresas listaEmpresa = new ListaEmpresas();
+        	listaEmpresa.executar(request, response);
+        	
+        } else if(paramAcao.equals("RemoveEmpresa")) {
+            
+        	RemoveEmpresa removeEmpresa = new RemoveEmpresa();
+        	removeEmpresa.remover(request, response);
+        	
+        } else if(paramAcao.equals("MostraEmpresa")) {
+            
+        	MostraEmpresa mostraEmpresa = new MostraEmpresa();
+        	mostraEmpresa.mostrar(request, response);
+        	
+        }
+	}
+
+}

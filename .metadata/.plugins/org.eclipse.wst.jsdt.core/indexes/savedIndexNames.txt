@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+C:\Users\Caio\GitHub\Servlet\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3166322079.index
-3216619146.index
-1329750312.index
-4285248778.index
-3667736611.index
-456790899.index
-657441854.index

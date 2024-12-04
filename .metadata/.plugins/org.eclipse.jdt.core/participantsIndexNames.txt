@@ -1,5 +1,0 @@
-INDEX VERSION 1.134
-C:\Users\Caio\GitHub\Servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\141730439.index
-\gerenciador\src\main\java
-C:\Users\Caio\GitHub\Servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3216619146.index
-\gerenciador\src\main\java

@@ -1,5 +1,0 @@
-package br.com.treinamento.gerenciador.acao;
-
-public interface Acao {
-
-}
